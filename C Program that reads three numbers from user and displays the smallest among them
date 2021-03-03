@@ -1,0 +1,41 @@
+
+/*
+ Copyright   : Techyrick.com
+ Description : C Program that reads three numbers from user and displays the
+ smallest among them 
+ ============================================================================
+ */
+
+
+#include<stdio.h> 
+
+int main(void) {
+
+	int a, b, c, smallest_no = 0;
+
+	printf("C Program to find Smallest among three numbers :");
+	printf("\nEnter No. A : ");
+	scanf("%d", &a);
+
+	printf("Enter No. B : ");
+	scanf("%d", &b);
+
+	printf("Enter No. C : ");
+	scanf("%d", &c);
+
+	if ((a <= b) && (a <= c)) {
+		smallest_no = a;
+	} else if ((b <= a) && (b <= c)) {
+		smallest_no = b;
+	}
+
+	else {
+		smallest_no = c;
+	}
+
+	printf("\n The Smallest Number among %d,%d,%d is %d", a, b, c, smallest_no);
+
+	return 0;
+}
+
+
